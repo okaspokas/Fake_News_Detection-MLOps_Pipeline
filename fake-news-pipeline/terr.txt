@@ -1,0 +1,24 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\ojask\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Antigravity\fake-news-pipeline
+plugins: anyio-4.13.0
+collecting ... collected 15 items
+
+tests/test_api.py::TestAPI::test_health_endpoint PASSED                  [  6%]
+tests/test_api.py::TestAPI::test_predict_real_news PASSED                [ 13%]
+tests/test_api.py::TestAPI::test_predict_fake_news PASSED                [ 20%]
+tests/test_api.py::TestAPI::test_predict_empty_title_fails PASSED        [ 26%]
+tests/test_api.py::TestAPI::test_predict_response_structure PASSED       [ 33%]
+tests/test_data_pipeline.py::TestDataPipeline::test_config_loads PASSED  [ 40%]
+tests/test_data_pipeline.py::TestDataPipeline::test_raw_data_loads PASSED [ 46%]
+tests/test_data_pipeline.py::TestDataPipeline::test_clean_data_removes_nulls PASSED [ 53%]
+tests/test_data_pipeline.py::TestDataPipeline::test_clean_data_removes_duplicates PASSED [ 60%]
+tests/test_data_pipeline.py::TestDataPipeline::test_cleaned_data_not_empty PASSED [ 66%]
+tests/test_train.py::TestTraining::test_model_file_created PASSED        [ 73%]
+tests/test_train.py::TestTraining::test_accuracy_above_threshold PASSED  [ 80%]
+tests/test_train.py::TestTraining::test_metrics_complete PASSED          [ 86%]
+tests/test_train.py::TestTraining::test_model_can_predict PASSED         [ 93%]
+tests/test_train.py::TestTraining::test_metrics_file_created PASSED      [100%]
+
+============================= 15 passed in 6.75s ==============================
