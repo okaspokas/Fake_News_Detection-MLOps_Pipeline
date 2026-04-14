@@ -1,4 +1,4 @@
-# Fake News Detection — MLOps Pipeline
+# Fake News Detection — ML Ops Pipeline
 
 An end-to-end machine learning pipeline for detecting fake news from headlines, built with a production-ready architecture including API deployment, CI/CD, and containerization.
 
